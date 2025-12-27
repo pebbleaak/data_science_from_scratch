@@ -1,0 +1,40 @@
+
+Vector = list[float]
+
+height_wieght_age = [70, 170, 40]
+
+x: Vector = [1, 2, 3, 4] 
+y: Vector  = [4, 5, 6, 7] 
+
+z: Vector = [12, 22, 24,55,22]
+
+
+
+grades = [95, 80, 75, 62]
+
+
+def add(v: Vector, w: Vector) -> Vector:
+
+    """Adds corresponding elements"""
+
+    assert len(v) == len(w), "vectors must be same length"
+
+    new_vector: Vector = [ v_i + w_i for v_i, w_i in zip(v, w) ]
+
+    return new_vector
+
+
+assert add([1,2, 3], [4, 5, 6]) == [5, 7, 9]
+
+def add(v: Vector, w: Vector) -> Vector:
+
+    """Adds corresponding elements"""
+
+    assert len(v) == len(w), "vectors must be same length"
+
+    new_vector: Vector = [ v_i + w_i for v_i, w_i in zip(v, w) ]
+
+    return new_vector
+
+
+assert add([1,2, 3], [4, 5, 6]) == [5, 7, 9]
